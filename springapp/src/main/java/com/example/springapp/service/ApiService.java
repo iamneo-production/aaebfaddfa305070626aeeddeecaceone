@@ -15,16 +15,16 @@ public class ApiService {
     public StudentRepo studentRepo;
  
 
-    public boolean createStudent(Student student) {
-        studentRepo.save(student);
-        return true;
-    }
+    // public boolean createStudent(Student student) {
+    //     studentRepo.save(student);
+    //     return true;
+    // }
 
     public Student getOneStudent(int studentId) {
         return studentRepo.findById(studentId).get();
       }
 
-    public List<Student> getAllStudents() {
-        return studentRepo.findAll();
-    }
+    // public List<Student> getAllStudents() {
+    //     return studentRepo.findAll();
+    // }
 }

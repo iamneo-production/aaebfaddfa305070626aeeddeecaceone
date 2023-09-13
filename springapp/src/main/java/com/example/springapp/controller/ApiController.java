@@ -14,18 +14,18 @@ public class ApiController {
     @Autowired
     public ApiService apiService;
 
-    @PostMapping("/")
-    public boolean createStudent(@RequestBody Student student) {
-        return apiService.createStudent(student);
-    }
+    // @PostMapping("/")
+    // public boolean createStudent(@RequestBody Student student) {
+    //     return apiService.createStudent(student);
+    // }
 
     @GetMapping("/{studentId}")
     public Student getOneLaptop(@PathVariable int studentId){
          return apiService.getOneStudent(studentId);
     }
 
-    @GetMapping("/")
-    public List<Student> getAllStudents() {
-        return apiService.getAllStudents();
-    }
+    // @GetMapping("/")
+    // public List<Student> getAllStudents() {
+    //     return apiService.getAllStudents();
+    // }
 }
